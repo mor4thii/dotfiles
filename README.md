@@ -10,7 +10,6 @@ stow -t $HOME --stow package [package...]
 stow -t $HOME --stow zsh ghostty starship nvim
 ```
 
-
 The terminal emulator I use is Ghostty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
 Thus I use starship.rs as prompt and zap for plugin management.
 
