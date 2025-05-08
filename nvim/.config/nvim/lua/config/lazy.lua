@@ -16,7 +16,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	spec = {
-		{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 		{ import = "custom.plugins" },
 	},
 	defaults = {
@@ -43,10 +42,4 @@ require("lazy").setup({
 	},
 })
 
-require("catppuccin").setup({
-	background = {
-		light = "latte",
-		dark = "macchiato",
-	},
-})
 vim.cmd.colorscheme "catppuccin"
