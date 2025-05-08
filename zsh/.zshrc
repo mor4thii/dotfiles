@@ -32,7 +32,10 @@ autoload -Uz compinit
 compinit
 
 # brew
-FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+if command -v brew 2>&1 >/dev/null ]
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 
 # SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
