@@ -37,3 +37,6 @@ In no particular order...
 - timewarrior
 - neovim
 - ssh
+
+## TODO
+- https://github.com/anametologin/krohnkite
