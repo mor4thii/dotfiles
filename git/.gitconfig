@@ -1,0 +1,8 @@
+[user]
+	name = Morathii 
+	email = morathii@icloud.com
+; include for all repositories inside $HOME/to/group
+[includeIf "gitdir:~/Documents/code/work/"]
+	path = ~/Documents/code/work/.gitconfig
+[core]
+	autocrlf = input
