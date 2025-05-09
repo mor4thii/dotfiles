@@ -1,7 +1,7 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = '$character$directory$git_branch'
+format = '$character$directory$git_branch$git_status'
 add_newline = true
 
 [character]
@@ -14,3 +14,6 @@ style = 'bold green'
 [git_branch]
 format = '[\[](bold green)[$branch(:$remote_branch)]($style)[\]](bold green) '
 style = 'bold cyan'
+
+[git_status]
+# modified = '⚡ '
