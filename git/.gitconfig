@@ -5,6 +5,7 @@
 	autocrlf = input
 	editor = vim
 	excludesfile = ~/.gitignore
+	pager = less -FRSX
 
 [fetch]
 	prune = true
@@ -16,13 +17,24 @@
 	defaultBranch = main
 
 [merge]
-	conflictstyle = merge
+	conflictstyle = diff3
+	tool = nvimdiff
+
+[mergetool]
+	prompt = false
 
 [pull]
 	rebase = true
 
 [push]
 	default = simple
+
+[rebase]
+	autosquash = true
+
+[rerere]
+	enabled = true
+	autoupdate = true
 
 [user]
 	name = Morathii 
