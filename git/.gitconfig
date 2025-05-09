@@ -1,5 +1,6 @@
-[color]
-	ui = auto
+[user]
+	name = Morathii 
+	email = morathii@icloud.com
 
 [core]
 	autocrlf = input
@@ -7,11 +8,11 @@
 	excludesfile = ~/.gitignore
 	pager = less -FRSX
 
+[color]
+	ui = auto
+
 [fetch]
 	prune = true
-
-[includeIf "gitdir:~/Documents/code/work/"]
-	path = ~/Documents/code/work/.gitconfig
 
 [init]
 	defaultBranch = main
@@ -36,6 +37,6 @@
 	enabled = true
 	autoupdate = true
 
-[user]
-	name = Morathii 
-	email = morathii@icloud.com
+[includeIf "gitdir:~/Documents/code/work/"]
+	path = ~/Documents/code/work/.gitconfig
+
