@@ -1,8 +1,29 @@
+[color]
+	ui = auto
+
+[core]
+	autocrlf = input
+	editor = vim
+	excludesfile = ~/.gitignore
+
+[fetch]
+	prune = true
+
+[includeIf "gitdir:~/Documents/code/work/"]
+	path = ~/Documents/code/work/.gitconfig
+
+[init]
+	defaultBranch = main
+
+[merge]
+	conflictstyle = merge
+
+[pull]
+	rebase = true
+
+[push]
+	default = simple
+
 [user]
 	name = Morathii 
 	email = morathii@icloud.com
-; include for all repositories inside $HOME/to/group
-[includeIf "gitdir:~/Documents/code/work/"]
-	path = ~/Documents/code/work/.gitconfig
-[core]
-	autocrlf = input
