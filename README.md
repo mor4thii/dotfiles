@@ -20,6 +20,44 @@ I currently migrate to neovim as my editor of choice.
 In my toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer pnpm over npm or yarn for dependency management in JS.
 On my Mac, I use brew to install stuff.
 
+## Arch installation
+pacman -S git yay-bin man-db man-pages texinfo playerctl brightnessctl fastfetch broadcom-bt-firmware tree wev
+
+pacman -S ghostty ghostty-shell-integration ghostty-terminfo vi vim neovim zsh starship stow
+yay hyprland-git
+
+### Networking
+
+```bash
+➜  ~ cat /etc/systemd/network/20-wired.network
+[Match]
+Name=enp42s0
+
+[Link]
+RequiredForOnline=routable
+
+[Network]
+DHCP=yes
+```
+
+```bash
+➜  ~ file /etc/resolv.conf
+/etc/resolv.conf: symbolic link to ../run/systemd/resolve/stub-resolv.conf
+```
+
+```bash
+ip link enp42s0 up
+```
+
+```bash
+systemctl start systemd-network.service
+systemctl enable systemd-network.service
+```
+
+```bash
+systemctl start systemd-resolved.service
+systemctl enable systemd-resolved.service
+```
 ## Supported tools
 
 In no particular order...
