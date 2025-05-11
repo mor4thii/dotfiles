@@ -21,7 +21,7 @@ In my toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer 
 On my Mac, I use brew to install stuff.
 
 ## Arch installation
-pacman -S git yay-bin man-db man-pages texinfo playerctl brightnessctl fastfetch broadcom-bt-firmware tree wev
+pacman -S git yay-bin wofi ranger xdg-user-dirs man-db man-pages texinfo playerctl brightnessctl fastfetch broadcom-bt-firmware tree wev
 
 pacman -S ghostty ghostty-shell-integration ghostty-terminfo vi vim neovim zsh starship stow
 yay hyprland-git
