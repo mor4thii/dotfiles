@@ -26,6 +26,8 @@ pacman -S git yay-bin man-db man-pages texinfo playerctl brightnessctl fastfetch
 pacman -S ghostty ghostty-shell-integration ghostty-terminfo vi vim neovim zsh starship stow
 yay hyprland-git
 
+pacman -S mesa vulkan-radeon
+
 ### Networking
 
 ```bash
