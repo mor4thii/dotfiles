@@ -1,3 +1,5 @@
 .DS_Store
 ssh/.ssh/id_*
+ssh-priv/.ssh/id_*
 ssh/.ssh/known_hosts*
+ssh-priv/.ssh/known_hosts*
