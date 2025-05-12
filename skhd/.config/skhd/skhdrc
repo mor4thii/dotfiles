@@ -9,3 +9,6 @@ cmd - left : yabai -m window --focus west
 cmd - right : yabai -m window --focus east
 
 cmd + ctrl + shift - v : yabai -m window --toggle float
+cmd + ctrl + shift - space : yabai -m space --balance
+
+cmd + ctrl - z : yabai -m window --toggle zoom-parent
