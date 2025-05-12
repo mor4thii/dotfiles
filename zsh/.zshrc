@@ -9,6 +9,8 @@ export VISUAL=nvim
 alias vim=nvim
 export XDG_CONFIG_HOME="$HOME/.config"
 
+setopt share_history
+
 ## User functions
 
 # List all applications with LISTEN port open
@@ -30,12 +32,6 @@ plug "zsh-users/zsh-history-substring-search"
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
-
-# brew
-if command -v brew 2>&1 >/dev/null ]
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-fi
 
 # SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
