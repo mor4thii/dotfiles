@@ -33,6 +33,8 @@ pacman -S xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
 pacman -S hyprpolkitagent
 systemctl --user enable --now hyprpolkitagent.service
 
+pacman -S waybar
+
 ### Networking
 
 ```bash
