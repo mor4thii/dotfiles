@@ -28,6 +28,11 @@ yay hyprland-git
 
 pacman -S mesa vulkan-radeon
 
+pacman -S xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
+
+pacman -S hyprpolkitagent
+systemctl --user enable --now hyprpolkitagent.service
+
 ### Networking
 
 ```bash
