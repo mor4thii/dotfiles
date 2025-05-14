@@ -8,7 +8,7 @@ return {
 			catppuccin.setup {
 				background = {
 					light = "latte",
-					dark = "macchiato",
+					dark = "frappe",
 				}
 			}
 		end,
