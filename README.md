@@ -20,59 +20,6 @@ I currently migrate to neovim as my editor of choice.
 In my toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer pnpm over npm or yarn for dependency management in JS.
 On my Mac, I use brew to install stuff.
 
-## For wallpapers
-
-- https://simpledesktops.com/browse/
-
-Or use one of the ones in the Wallpapers folder, kindly provided by https://github.com/Noctax/Noctax-Wallpapers
-
-## Arch installation
-pacman -S git yay-bin dunst wofi ranger xdg-user-dirs man-db man-pages texinfo playerctl brightnessctl fastfetch broadcom-bt-firmware tree wev
-
-pacman -S ghostty ghostty-shell-integration ghostty-terminfo vi vim neovim zsh starship stow
-yay hyprland-git
-
-pacman -S mesa vulkan-radeon
-
-pacman -S xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
-
-pacman -S hyprpolkitagent
-systemctl --user enable --now hyprpolkitagent.service
-
-pacman -S waybar
-
-### Networking
-
-```bash
-➜  ~ cat /etc/systemd/network/20-wired.network
-[Match]
-Name=enp42s0
-
-[Link]
-RequiredForOnline=routable
-
-[Network]
-DHCP=yes
-```
-
-```bash
-➜  ~ file /etc/resolv.conf
-/etc/resolv.conf: symbolic link to ../run/systemd/resolve/stub-resolv.conf
-```
-
-```bash
-ip link enp42s0 up
-```
-
-```bash
-systemctl start systemd-network.service
-systemctl enable systemd-network.service
-```
-
-```bash
-systemctl start systemd-resolved.service
-systemctl enable systemd-resolved.service
-```
 ## Supported tools
 
 In no particular order...
@@ -90,5 +37,63 @@ In no particular order...
 - neovim
 - ssh
 
-## TODO
-- https://github.com/anametologin/krohnkite
+## For wallpapers
+
+- https://simpledesktops.com/browse/
+
+Or use one of the ones in the Wallpapers folder, kindly provided by https://github.com/Noctax/Noctax-Wallpapers
+
+## CachyOS
+
+Follow instruction on https://wiki.cachyos.org/ for installing using the GUI installer iso, choosing 
+- systemd-boot,
+- btrfs,
+- hyprland
+
+Then, follow steps for [post install](https://wiki.cachyos.org/configuration/post_install_setup/) including apparmor and zsh switch.
+Also follow steps regarding Steam in the [Gaming](https://wiki.cachyos.org/configuration/gaming/) section. Don't forget to set games to using performance mode
+
+```
+LD_PRELOAD="" game-performance %command%
+```
+
+Use `active` pstate and powersafe governor, also as preference, c.f. [General System Tweaks](https://wiki.cachyos.org/configuration/general_system_tweaks/)
+
+### Bluetooth
+
+CachyOS, as of time of writing, provides bluetoothctl for bluetooth device management.
+To connect to the XBox Controller, the following steps can help
+
+```
+# Puts me into [bluetooth]# prompt
+bluetoothctl
+```
+```
+# Make sure the right bt controller is used
+show
+```
+```
+power on
+discoverable on
+pairable on
+```
+```
+# Will start printing out discovered devices, find right MAC of target device
+scan on
+```
+```
+pair <dev>
+```
+```
+# This should also turn off discoverable, double-check with `show`
+scan off
+```
+```
+connect <dev>
+trust <dev>
+```
+
+### (For now) Manual steps
+```
+sudo pacman -S tree stow
+```
