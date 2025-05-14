@@ -12,7 +12,7 @@ mouse-hide-while-typing = true
 
 window-vsync = false
 window-inherit-working-directory = true
-window-width = 131
-window-height = 33
+window-width = 101
+window-height = 24
 
 macos-titlebar-style = tabs
