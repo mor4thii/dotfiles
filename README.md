@@ -20,6 +20,12 @@ I currently migrate to neovim as my editor of choice.
 In my toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer pnpm over npm or yarn for dependency management in JS.
 On my Mac, I use brew to install stuff.
 
+## For wallpapers
+
+- https://simpledesktops.com/browse/
+
+Or use one of the ones in the Wallpapers folder, kindly provided by https://github.com/Noctax/Noctax-Wallpapers
+
 ## Arch installation
 pacman -S git yay-bin dunst wofi ranger xdg-user-dirs man-db man-pages texinfo playerctl brightnessctl fastfetch broadcom-bt-firmware tree wev
 
