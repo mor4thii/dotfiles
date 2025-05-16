@@ -1,7 +1,5 @@
 theme = dark:catppuccin-mocha,light:catppuccin-latte
 
-command = /usr/bin/zsh
-
 font-family = "JetBrainsMono NFM Regular"
 font-family-bold = "JetBrainsMono NFM Bold"
 font-family-italic = "JetBrainsMono NFM Italic"
