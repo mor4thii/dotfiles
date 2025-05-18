@@ -2,14 +2,6 @@
 
 My dotfiles shared between machines. This will generally produce a Catppuccin-themed workspace with the tools I use every day.
 
-```bash
-stow -t $HOME --stow package [package...]
-```
-
-```bash
-stow -t $HOME --stow zsh ghostty starship nvim
-```
-
 The terminal emulator I use is Ghostty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
 Thus I use starship.rs as prompt and zap for plugin management.
 
@@ -48,7 +40,7 @@ Or use one of the ones in the Wallpapers folder, kindly provided by https://gith
 Follow instruction on https://wiki.cachyos.org/ for installing using the GUI installer iso, choosing 
 - systemd-boot,
 - btrfs,
-- hyprland
+- Plasma Desktop
 
 Then, follow steps for [post install](https://wiki.cachyos.org/configuration/post_install_setup/) including apparmor and zsh switch.
 Also follow steps regarding Steam in the [Gaming](https://wiki.cachyos.org/configuration/gaming/) section. Don't forget to set games to using performance mode
@@ -94,6 +86,24 @@ trust <dev>
 ```
 
 ### (For now) Manual steps
+Set up git SSH key, clone this repo, then:
+
+```zsh
+sudo pacman -S ghostty neovim tree stow
 ```
-sudo pacman -S tree stow
+
+```zsh
+curl -sS https://starship.rs/install.sh | sh
+```
+
+```zsh
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1 -k
+```
+
+```zsh
+stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh
+```
+
+```zsh
+chsh -s /bin/zsh
 ```
