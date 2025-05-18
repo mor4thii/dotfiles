@@ -105,5 +105,16 @@ stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh
 ```
 
 ```zsh
-chsh -s /bin/zsh
+chsh -s /usr/bin/zsh
 ```
+
+```zsh
+sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
+```
+
+- In KDE System Settings, enable HDR.
+- Also check Audio setup
+- Apply https://github.com/catppuccin/firefox (Moccha Mauve)
+- Apply https://github.com/catppuccin/kde (Moccha Mauve) 
+- In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
+
