@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Fred's Grid",
+        "padding": 0,
+        "zones": [
+            {
+                "x": 0,
+                "y": 0,
+                "height": 25,
+                "width": 25
+            },
+            {
+                "x": 0,
+                "y": 0,
+                "height": 50,
+                "width": 50
+            },
+            {
+                "x": 75,
+                "y": 0,
+                "height": 25,
+                "width": 25
+            },
+            {
+                "x": 50,
+                "y": 0,
+                "height": 50,
+                "width": 50
+            },
+            {
+                "x": 12.5,
+                "y": 25,
+                "height": 75,
+                "width": 75
+            },
+            {
+                "x": 25,
+                "y": 0,
+                "height": 50,
+                "width": 50
+            },
+            {
+                "x": 25,
+                "y": 50,	
+                "height": 50,
+                "width": 50
+            },
+            {
+                "x": 0,
+                "y": 50,	
+                "height": 50,
+                "width": 50
+            },
+            {
+                "x": 50,
+                "y": 50,	
+                "height": 50,
+                "width": 50
+            },
+            {
+                "x": 0,
+                "y": 75,	
+                "height": 25,
+                "width": 25
+            },
+            {
+                "x": 75,
+                "y": 75,	
+                "height": 25,
+                "width": 25
+            }
+        ]
+    }
+]
