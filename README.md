@@ -118,3 +118,6 @@ sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
 - Apply https://github.com/catppuccin/kde (Moccha Mauve) 
 - In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
 
+## Update Keychron firmware on Linux
+
+See [QMK FAQ](https://docs.qmk.fm/faq_build#linux-udev-rules) for rules file to make the [launcher](https://launcher.keychron.com/) connect to the keyboard correctly.
