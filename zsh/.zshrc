@@ -55,6 +55,10 @@ esac
 export PATH="/Users/frederic.sinn/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
+### TeXLive
+export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
+###
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('~/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
