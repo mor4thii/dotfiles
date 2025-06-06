@@ -11,6 +11,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 setopt share_history
 
+eval $(thefuck --alias)
+
 ## User functions
 
 # List all applications with LISTEN port open
