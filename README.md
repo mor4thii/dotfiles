@@ -28,6 +28,17 @@ In no particular order...
 - timewarrior
 - neovim
 - ssh
+- Plasma/kzones
+
+## Tools I like
+
+There are some more tools that I like to use on a daily basis.
+
+- [fd](https://github.com/sharkdp/fd)
+- [fzf](https://github.com/junegunn/fzf)
+- [rg](https://github.com/BurntSushi/ripgrep)
+- [tldr](https://github.com/tldr-pages/tldr)
+- [thefuck](https://github.com/nvbn/thefuck)
 
 ## For wallpapers
 
@@ -51,64 +62,30 @@ LD_PRELOAD="" game-performance %command%
 
 Use `active` pstate and powersafe governor, also as preference, c.f. [General System Tweaks](https://wiki.cachyos.org/configuration/general_system_tweaks/)
 
-### Bluetooth
-
-CachyOS, as of time of writing, provides bluetoothctl for bluetooth device management.
-To connect to the XBox Controller, the following steps can help
-
-```
-# Puts me into [bluetooth]# prompt
-bluetoothctl
-```
-```
-# Make sure the right bt controller is used
-show
-```
-```
-power on
-discoverable on
-pairable on
-```
-```
-# Will start printing out discovered devices, find right MAC of target device
-scan on
-```
-```
-pair <dev>
-```
-```
-# This should also turn off discoverable, double-check with `show`
-scan off
-```
-```
-connect <dev>
-trust <dev>
-```
-
 ### (For now) Manual steps
 Set up git SSH key, clone this repo, then:
 
-```zsh
+```shell
 sudo pacman -S ghostty neovim tree stow
 ```
 
-```zsh
+```shell
 curl -sS https://starship.rs/install.sh | sh
 ```
 
-```zsh
+```shell
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1 -k
 ```
 
-```zsh
+```shell
 stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh
 ```
 
-```zsh
+```shell
 chsh -s /usr/bin/zsh
 ```
 
-```zsh
+```shell
 sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
 ```
 
@@ -117,6 +94,46 @@ sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
 - Apply https://github.com/catppuccin/firefox (Moccha Mauve)
 - Apply https://github.com/catppuccin/kde (Moccha Mauve) 
 - In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
+
+### Bluetooth
+
+CachyOS, as of time of writing, provides bluetoothctl for bluetooth device management.
+To connect to the XBox Controller, the following steps can help
+
+```shell
+# Puts me into [bluetooth]# prompt
+bluetoothctl
+```
+
+```shell
+# Make sure the right bt controller is used
+show
+```
+
+```shell
+power on
+discoverable on
+pairable on
+```
+
+```shell
+# Will start printing out discovered devices, find right MAC of target device
+scan on
+```
+
+```shell
+pair <dev>
+```
+
+```shell
+# This should also turn off discoverable, double-check with `show`
+scan off
+```
+
+```shell
+connect <dev>
+trust <dev>
+```
 
 ## Update Keychron firmware on Linux
 
