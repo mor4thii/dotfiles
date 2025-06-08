@@ -5,12 +5,12 @@ My dotfiles shared between machines. This will generally produce a Catppuccin-th
 The terminal emulator I use is Ghostty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
 Thus I use starship.rs as prompt and zap for plugin management.
 
-I use taskwarrior and timewarrior for keeping track of things.
+I use taskwarrior and timewarrior for keeping track of things at work.
 
 I currently migrate to neovim as my editor of choice.
 
-In my toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer pnpm over npm or yarn for dependency management in JS.
-On my Mac, I use brew to install stuff.
+In my work toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer pnpm over npm or yarn for dependency management in JS.
+I use brew to install stuff there, as well.
 
 ## Supported tools
 
@@ -33,6 +33,7 @@ In no particular order...
 ## Tools I like
 
 There are some more tools that I like to use on a daily basis.
+From this list, CachyOS already includes fd, fzf, rg, and tldr.
 
 - [fd](https://github.com/sharkdp/fd)
 - [fzf](https://github.com/junegunn/fzf)
@@ -40,6 +41,7 @@ There are some more tools that I like to use on a daily basis.
 - [tldr](https://github.com/tldr-pages/tldr)
 - [thefuck](https://github.com/nvbn/thefuck)
 - [miniforge](https://github.com/conda-forge/miniforge)
+- [TeXlive](https://www.tug.org/texlive/quickinstall.html)
 
 ## For wallpapers
 
@@ -64,7 +66,8 @@ LD_PRELOAD="" game-performance %command%
 Use `active` pstate and powersafe governor, also as preference, c.f. [General System Tweaks](https://wiki.cachyos.org/configuration/general_system_tweaks/)
 
 ### (For now) Manual steps
-Set up git SSH key, clone this repo, then:
+Set up git SSH key, clone this repo and install the additional tools listed above.
+Then:
 
 ```shell
 sudo pacman -S ghostty neovim tree stow
@@ -80,10 +83,6 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 
 ```shell
 stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh
-```
-
-```shell
-chsh -s /usr/bin/zsh
 ```
 
 ```shell
