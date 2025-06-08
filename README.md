@@ -39,6 +39,7 @@ There are some more tools that I like to use on a daily basis.
 - [rg](https://github.com/BurntSushi/ripgrep)
 - [tldr](https://github.com/tldr-pages/tldr)
 - [thefuck](https://github.com/nvbn/thefuck)
+- [miniforge](https://github.com/conda-forge/miniforge)
 
 ## For wallpapers
 
