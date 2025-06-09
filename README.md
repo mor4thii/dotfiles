@@ -42,6 +42,7 @@ From this list, CachyOS already includes fd, fzf, rg, and tldr.
 - [thefuck](https://github.com/nvbn/thefuck)
 - [miniforge](https://github.com/conda-forge/miniforge)
 - [TeXlive](https://www.tug.org/texlive/quickinstall.html)
+- [yay](https://github.com/Jguer/yay)
 
 ## For wallpapers
 
@@ -133,6 +134,19 @@ scan off
 ```shell
 connect <dev>
 trust <dev>
+```
+
+### DaVinci
+
+See the [Arch page](https://wiki.archlinux.org/title/DaVinci_Resolve) for install instructions.
+
+## Troubleshooting
+
+If there are issues regarding PGP keys when running `pacman`, the following commands update the pacman keys.
+
+```
+sudo pacman-key --refresh-keys
+sudo pacman -Sy
 ```
 
 ## Update Keychron firmware on Linux
