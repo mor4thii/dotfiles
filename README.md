@@ -53,9 +53,11 @@ Or use one of the ones in the Wallpapers folder, kindly provided by https://gith
 ## CachyOS
 
 Follow instruction on https://wiki.cachyos.org/ for installing using the GUI installer iso, choosing 
-- systemd-boot,
+- Limine,
 - btrfs,
 - Plasma Desktop
+
+Make sure to deselect packages that have cachyOS-specific naming, as well as alacritty, micro, and some other unused tools.
 
 Then, follow steps for [post install](https://wiki.cachyos.org/configuration/post_install_setup/) including apparmor and zsh switch.
 Also follow steps regarding Steam in the [Gaming](https://wiki.cachyos.org/configuration/gaming/) section. Don't forget to set games to using performance mode
