@@ -23,9 +23,11 @@ eval $(thefuck --alias)
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
-plug "zap-zsh/completions"
-plug "atoftegaard-git/zsh-omz-autocomplete"
+
+# Has to be loaded after zsh-syntax-highlighting
 plug "zsh-users/zsh-history-substring-search"
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 ## TeXLive
 export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
