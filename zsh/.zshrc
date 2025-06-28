@@ -6,13 +6,15 @@ alias vim=nvim
 
 export FZF_BASE=/usr/share/fzf
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+HISTORY_IGNORE='(&|[bf]g|c|clear|history|exit|q|pwd|* --help)'
+
+setopt appendhistory
 setopt share_history
 setopt hist_ignore_space
 setopt extendedglob
-
-HISTORY_IGNORE='(&|[bf]g|c|clear|history|exit|q|pwd|* --help)'
-
-eval $(thefuck --alias)
 
 # User functions
 
@@ -20,17 +22,20 @@ eval $(thefuck --alias)
 
 ## zap 
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
-plug "zsh-users/zsh-autosuggestions"
-plug "zap-zsh/supercharge"
-plug "zsh-users/zsh-syntax-highlighting"
 
-# Has to be loaded after zsh-syntax-highlighting
-plug "zsh-users/zsh-history-substring-search"
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+plug "zsh-users/zsh-autosuggestions"
+plug "zap-zsh/fzf"
+plug "sdiebolt/zsh-ssh-agent"
+plug "embeddedpenguin/sanekeybinds"
+plug "atoftegaard-git/zsh-omz-autocomplete"
+
+plug "zsh-users/zsh-syntax-highlighting"
 
 ## TeXLive
 export PATH="/usr/local/texlive/2025/bin/x86_64-linux:$PATH"
+
+## thefuck
+eval $(thefuck --alias)
 
 ## >>> conda initialize >>>
 ## !! Contents within this block are managed by 'conda init' !!
