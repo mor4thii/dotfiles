@@ -103,6 +103,8 @@ yay -S wl-clipboard
 - Apply https://github.com/catppuccin/firefox (Moccha Mauve)
 - Apply https://github.com/catppuccin/kde (Moccha Mauve) 
 - Apply the kzones layout in KDE kwin settings
+- Apply https://github.com/catppuccin/limine (Mocha Mauve)
+  - Also set timeout to 2s and add `interface_branding:`
 
 > In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
 
