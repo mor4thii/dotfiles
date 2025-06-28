@@ -33,13 +33,15 @@ In no particular order...
 ## Tools I like
 
 There are some more tools that I like to use on a daily basis.
-From this list, CachyOS already includes fd, fzf, rg, and tldr.
+From this list, we can install fd, fzf, rg, thefuck, and tldr using `pacman`.
 
 - [fd](https://github.com/sharkdp/fd)
 - [fzf](https://github.com/junegunn/fzf)
 - [rg](https://github.com/BurntSushi/ripgrep)
-- [tldr](https://github.com/tldr-pages/tldr)
 - [thefuck](https://github.com/nvbn/thefuck)
+- [tldr](https://github.com/tealdeer-rs/tealdeer)
+
+These other tools need manual steps
 - [miniforge](https://github.com/conda-forge/miniforge)
 - [TeXlive](https://www.tug.org/texlive/quickinstall.html)
 - [yay](https://github.com/Jguer/yay)
@@ -73,7 +75,7 @@ Set up git SSH key, clone this repo and install the additional tools listed abov
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck
 ```
 
 ```shell
@@ -92,11 +94,21 @@ stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh
 sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
 ```
 
+```shell
+yay -S wl-clipboard
+```
+
 - In KDE System Settings, enable HDR.
 - Also check Audio setup
 - Apply https://github.com/catppuccin/firefox (Moccha Mauve)
 - Apply https://github.com/catppuccin/kde (Moccha Mauve) 
-- In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
+- Apply the kzones layout in KDE kwin settings
+
+> In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
+
+### DaVinci
+
+See the [Arch page](https://wiki.archlinux.org/title/DaVinci_Resolve) for install instructions.
 
 ### Bluetooth
 
@@ -137,10 +149,6 @@ scan off
 connect <dev>
 trust <dev>
 ```
-
-### DaVinci
-
-See the [Arch page](https://wiki.archlinux.org/title/DaVinci_Resolve) for install instructions.
 
 ## Troubleshooting
 
