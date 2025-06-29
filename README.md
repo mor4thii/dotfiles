@@ -50,7 +50,7 @@ These other tools need manual steps
 
 - https://simpledesktops.com/browse/
 
-Or use one of the ones in the Wallpapers folder, kindly provided by https://github.com/Noctax/Noctax-Wallpapers
+Or use one of the ones in the Wallpapers folder, kindly provided by https://github.com/Noctax/Noctax-Wallpapers and https://github.com/orangci/walls-catppuccin-mocha
 
 ## CachyOS
 
