@@ -98,7 +98,12 @@ sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
 yay -S wl-clipboard
 ```
 
+```shell
+sudo cp assets/background-tile.png /usr/share/plymouth/themes/spinner/
+```
+
 - In KDE System Settings, enable HDR.
+- Use `BGRT` as Boot Splash Screen Theme
 - Also check Audio setup
 - Apply https://github.com/catppuccin/firefox (Moccha Mauve)
 - Apply https://github.com/catppuccin/kde (Moccha Mauve) 
