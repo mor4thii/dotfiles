@@ -99,7 +99,7 @@ yay -S wl-clipboard
 ```
 
 ```shell
-sudo cp assets/background-tile.png /usr/share/plymouth/themes/spinner/
+sudo cp assets/background-tile.png /usr/share/plymouth/themes/spinner/ && sudo mkinitcpio -P
 ```
 
 - In KDE System Settings, enable HDR.
