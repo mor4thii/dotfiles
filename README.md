@@ -104,6 +104,7 @@ sudo cp assets/background-tile.png /usr/share/plymouth/themes/spinner/
 
 - In KDE System Settings, enable HDR.
 - Use `BGRT` as Boot Splash Screen Theme
+- Breeze Chameleon Dark is a good icon theme
 - Also check Audio setup
 - Apply https://github.com/catppuccin/firefox (Moccha Mauve)
 - Apply https://github.com/catppuccin/kde (Moccha Mauve) 
