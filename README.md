@@ -12,6 +12,9 @@ I currently migrate to neovim as my editor of choice.
 In my work toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer pnpm over npm or yarn for dependency management in JS.
 I use brew to install stuff there, as well.
 
+## TODO
+- Better job at deduplicating work and private zshrc
+
 ## Supported tools
 
 In no particular order...
