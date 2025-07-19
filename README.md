@@ -55,6 +55,13 @@ These other tools need manual steps
 
 Or use one of the ones in the Wallpapers folder, kindly provided by https://github.com/Noctax/Noctax-Wallpapers and https://github.com/orangci/walls-catppuccin-mocha
 
+## Fonts
+
+I use Inter for UI and JetBrains Mono (Nerd Font) for monospaced fonts.
+
+- https://rsms.me/inter/download/
+- https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
+
 ## CachyOS
 
 Follow instruction on https://wiki.cachyos.org/ for installing using the GUI installer iso, choosing 
