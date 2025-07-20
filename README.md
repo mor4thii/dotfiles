@@ -99,6 +99,18 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
+sdk install java 21.0.7-tem
+```
+
+```shell
+sdk install maven 3.9.11
+```
+
+```shell
+nvm install lts/jod
+```
+
+```shell
 stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh electron
 ```
 
