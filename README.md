@@ -92,23 +92,11 @@ sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck luarocks
 ```
 
 ```shell
-rustup default stable
-```
-
-```shell
 curl -sS https://starship.rs/install.sh | sh
 ```
 
 ```shell
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1 -k
-```
-
-```shell
-sdk install java 21.0.7-tem
-```
-
-```shell
-sdk install maven 3.9.11
 ```
 
 ```shell
@@ -124,11 +112,27 @@ yay -S wl-clipboard juliaup
 ```
 
 ```shell
+rustup default stable
+```
+
+```shell
+pnpm env use --global lts && 
+```
+
+```shell
+sdk install java 21.0.7-tem
+```
+
+```shell
+sdk install maven 3.9.11
+```
+
+```shell
 juliaup add release && juliaup default release
 ```
 
 ```shell
-pnpm install -g tree-sitter-cli
+pnpm add -g tree-sitter-cli && pnpm approve-builds -g
 ```
 
 ```shell
