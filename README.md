@@ -48,6 +48,8 @@ These other tools need manual steps
 - [miniforge](https://github.com/conda-forge/miniforge)
 - [TeXlive](https://www.tug.org/texlive/quickinstall.html)
 - [yay](https://github.com/Jguer/yay)
+- [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
+- [sdkman](https://sdkman.io/)
 
 ## For wallpapers
 
