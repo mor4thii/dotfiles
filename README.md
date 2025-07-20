@@ -3,40 +3,41 @@
 My dotfiles shared between machines. This will generally produce a Catppuccin-themed workspace with the tools I use every day.
 
 The terminal emulator I use is Ghostty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
-Thus I use starship.rs as prompt and zap for plugin management.
-
-I use taskwarrior and timewarrior for keeping track of things at work.
-
-I currently migrate to neovim as my editor of choice.
-
-In my work toolchain I use sdkman and nvm to manage JVM and JS versions and I prefer pnpm over npm or yarn for dependency management in JS.
-I use brew to install stuff there, as well.
+Thus I use starship.rs as prompt and zap for plugin management. I currently migrate to neovim as my editor of choice.
 
 ## TODO
-- Better job at deduplicating work and private zshrc
+- Better job at de-duplicating work and private `.zshrc` file
 
 ## Supported tools
 
-In no particular order...
+Shared configs that are the same on every machine are just the following.
 
-- Ghostty
-- zsh
-  - sdkman
-  - nvm
-  - pnpm
-  - brew
-  - zap
-- starship.rs
-- taskwarrior
-- timewarrior
-- neovim
-- ssh
-- Plasma/kzones
+- ghostty
+- nvim
+- starship
+
+On my private machines, I have configuration for these tools.
+
+- electron
+- git
+- kzones
+- plasma
+- profile
+- ssh-priv
+
+On my work machine, I use these tools in addition to the shared list above.
+
+- git-work
+- ideavim
+- profile-work
+- ssh-work
+- task
+- timew
 
 ## Tools I like
 
-There are some more tools that I like to use on a daily basis.
-From this list, we can install fd, fzf, rg, thefuck, and tldr using `pacman`.
+There are some more tools that I like to use on a daily basis, but that have no dedicated configuration to share between machines.
+From this list, we can install `fd`, `fzf`, `rg`, `thefuck`, and `tldr` using `pacman`.
 
 - [fd](https://github.com/sharkdp/fd)
 - [fzf](https://github.com/junegunn/fzf)
@@ -44,14 +45,17 @@ From this list, we can install fd, fzf, rg, thefuck, and tldr using `pacman`.
 - [thefuck](https://github.com/nvbn/thefuck)
 - [tldr](https://github.com/tealdeer-rs/tealdeer)
 
-These other tools need manual steps
+These other tools need manual steps:
+
 - [miniforge](https://github.com/conda-forge/miniforge)
 - [TeXlive](https://www.tug.org/texlive/quickinstall.html)
 - [yay](https://github.com/Jguer/yay)
-- [nvm](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
 - [sdkman](https://sdkman.io/)
+- [pnpm](https://pnpm.io/installation#on-posix-systems)
 
 ## For wallpapers
+
+There is a web resource I tend to use to search for wallpapers.
 
 - https://simpledesktops.com/browse/
 
@@ -59,14 +63,11 @@ Or use one of the ones in the Wallpapers folder, kindly provided by https://gith
 
 ## Fonts
 
-I use Inter for UI and JetBrains Mono (Nerd Font) for monospaced fonts.
-
-- https://rsms.me/inter/download/
-- https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip
+I use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
 
 ## CachyOS
 
-Follow instruction on https://wiki.cachyos.org/ for installing using the GUI installer iso, choosing 
+Follow instruction on the [CachyOS wiki](https://wiki.cachyos.org/) for installing using the GUI installer iso, choosing 
 - Limine,
 - btrfs,
 - Plasma Desktop
@@ -111,10 +112,6 @@ sdk install maven 3.9.11
 ```
 
 ```shell
-nvm install lts/jod
-```
-
-```shell
 stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh electron
 ```
 
@@ -131,7 +128,7 @@ juliaup add release && juliaup default release
 ```
 
 ```shell
-npm install -g tree-sitter-cli
+pnpm install -g tree-sitter-cli
 ```
 
 ```shell
