@@ -85,7 +85,7 @@ Set up git SSH key, clone this repo and install the additional tools listed abov
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck luarocks lazygit ast-grep
 ```
 
 ```shell
