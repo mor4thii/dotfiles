@@ -88,7 +88,7 @@ Set up git SSH key, clone this repo and install the additional tools listed abov
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck luarocks lazygit ast-grep go python-pip rustup php composer ruby mermaid-cli
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck luarocks lazygit ast-grep go python-pip rustup php composer ruby mermaid-cli cpanminus python-pynvim
 ```
 
 ```shell
@@ -133,6 +133,22 @@ juliaup add release && juliaup default release
 
 ```shell
 pnpm add -g tree-sitter-cli && pnpm approve-builds -g
+```
+
+```shell
+cpan App::ucpan
+```
+
+```shell
+cpan Bundle::CPAN
+```
+
+```shell
+cpanm -n Neovim::Ext --sudo
+```
+
+```shell
+gem install neovim
 ```
 
 ```shell
