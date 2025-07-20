@@ -6,21 +6,37 @@ alias vim=nvim
 
 export FZF_BASE=/usr/share/fzf
 
+## zsh options
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 HISTORY_IGNORE='(&|[bf]g|c|clear|history|exit|q|pwd|* --help)'
 
-setopt appendhistory
+### Changing directories
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushd_silent
+
+### History
+setopt append_history
 setopt share_history
 setopt hist_ignore_space
-setopt extendedglob
+
+### Expansion and Globbing
+setopt extended_glob
+setopt glob_dots
+
+### Input/Output
+setopt correct
+setopt correct_all
 
 # User functions
 
 # 3rd party inits
 
-## zap 
+## zap
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
 plug "zsh-users/zsh-autosuggestions"
