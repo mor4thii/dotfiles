@@ -87,7 +87,11 @@ Set up git SSH key, clone this repo and install the additional tools listed abov
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck luarocks lazygit ast-grep go
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck luarocks lazygit ast-grep go python-pip rustup php composer ruby mermaid-cli
+```
+
+```shell
+rustup default stable
 ```
 
 ```shell
@@ -119,7 +123,15 @@ sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
 ```
 
 ```shell
-yay -S wl-clipboard
+yay -S wl-clipboard juliaup
+```
+
+```shell
+juliaup add release && juliaup default release
+```
+
+```shell
+npm install -g tree-sitter-cli
 ```
 
 ```shell
@@ -135,6 +147,7 @@ sudo cp assets/background-tile.png /usr/share/plymouth/themes/spinner/ && sudo m
 - Apply the kzones layout in KDE kwin settings
 - Apply https://github.com/catppuccin/limine (Mocha Mauve)
   - Also set timeout to 2s and add `interface_branding:`
+- In nvim, run `:TSInstall css latex norg scss svelte typst vue`
 
 > In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
 
