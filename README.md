@@ -119,7 +119,7 @@ rustup default stable
 ```
 
 ```shell
-pnpm env use --global lts && 
+pnpm env use --global lts &&
 ```
 
 ```shell
@@ -237,5 +237,8 @@ However, here are some steps I needed to do to bring my work machine up to simpl
 brew install fish ast-grep lazygit wget tree-sitter ghostscript imagemagick tree-sitter-cli
 ```
 
-I use `sdkman` and `nvm` on my work machine, so at least for JS, the setup differs.
-I needed to install `TeXlive` as well.
+```shell
+pnpm add -g prettier markdown-toc markdownlint-cli2 @mermaid-js/mermaid-cli
+```
+
+I use `sdkman` and `pnpm` on my work machine. I needed to install `TeXlive` as well.
