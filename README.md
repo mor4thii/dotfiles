@@ -6,6 +6,7 @@ The terminal emulator I use is Ghostty, the shell is zsh. I opted out of oh-my-z
 Thus I use starship.rs as prompt and zap for plugin management. I currently migrate to neovim as my editor of choice.
 
 ## TODO
+
 - Better job at de-duplicating work and private `.zshrc` file
 
 ## Supported tools
@@ -57,9 +58,9 @@ These other tools need manual steps:
 
 There is a web resource I tend to use to search for wallpapers.
 
-- https://simpledesktops.com/browse/
+- <https://simpledesktops.com/browse/>
 
-Or use one of the ones in the Wallpapers folder, kindly provided by https://github.com/Noctax/Noctax-Wallpapers and https://github.com/orangci/walls-catppuccin-mocha
+Or use one of the ones in the Wallpapers folder, kindly provided by <https://github.com/Noctax/Noctax-Wallpapers> and <https://github.com/orangci/walls-catppuccin-mocha>
 
 ## Fonts
 
@@ -67,7 +68,8 @@ I use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd 
 
 ## CachyOS
 
-Follow instruction on the [CachyOS wiki](https://wiki.cachyos.org/) for installing using the GUI installer iso, choosing 
+Follow instruction on the [CachyOS wiki](https://wiki.cachyos.org/) for installing using the GUI installer iso, choosing
+
 - Limine,
 - btrfs,
 - Plasma Desktop
@@ -84,6 +86,7 @@ LD_PRELOAD="" game-performance %command%
 Use `active` pstate and powersafe governor, also as preference, c.f. [General System Tweaks](https://wiki.cachyos.org/configuration/general_system_tweaks/)
 
 ### (For now) Manual steps
+
 Set up git SSH key, clone this repo and install the additional tools listed above.
 Then:
 
@@ -159,10 +162,10 @@ sudo cp assets/background-tile.png /usr/share/plymouth/themes/spinner/ && sudo m
 - Use `BGRT` as Boot Splash Screen Theme
 - Breeze Chameleon Dark is a good icon theme
 - Also check Audio setup
-- Apply https://github.com/catppuccin/firefox (Moccha Mauve)
-- Apply https://github.com/catppuccin/kde (Moccha Mauve) 
+- Apply <https://github.com/catppuccin/firefox> (Moccha Mauve)
+- Apply <https://github.com/catppuccin/kde> (Moccha Mauve)
 - Apply the kzones layout in KDE kwin settings
-- Apply https://github.com/catppuccin/limine (Mocha Mauve)
+- Apply <https://github.com/catppuccin/limine> (Mocha Mauve)
   - Also set timeout to 2s and add `interface_branding:`
 - In nvim, run `:TSInstall css latex norg scss svelte typst vue`
 
@@ -224,3 +227,15 @@ sudo pacman -Sy
 ## Update Keychron firmware on Linux
 
 See [QMK FAQ](https://docs.qmk.fm/faq_build#linux-udev-rules) for rules file to make the [launcher](https://launcher.keychron.com/) connect to the keyboard correctly.
+
+## Work Mac
+
+This section is way less elaborate as I focus on my private setup for now. I will revisit this once I need to reinstall my work machine.
+However, here are some steps I needed to do to bring my work machine up to simpledesktops
+
+```shell
+brew install fish ast-grep lazygit wget tree-sitter ghostscript imagemagick tree-sitter-cli
+```
+
+I use `sdkman` and `nvm` on my work machine, so at least for JS, the setup differs.
+I needed to install `TeXlive` as well.
