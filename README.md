@@ -107,7 +107,7 @@ stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh electron
 ```
 
 ```shell
-sudo pacman -S obs-studio obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
+sudo pacman -S obs-studio-browser obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
 ```
 
 ```shell
