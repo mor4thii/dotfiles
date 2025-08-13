@@ -111,12 +111,13 @@ sudo pacman -S obs-studio-browser obs-vkcapture lib32-obs-vkcapture alsa-scarlet
 ```
 
 ```shell
-yay -S wl-clipboard juliaup
+rustup default stable
 ```
 
 ```shell
-rustup default stable
+yay -S wl-clipboard juliaup
 ```
+
 
 ```shell
 pnpm env use --global lts &&
