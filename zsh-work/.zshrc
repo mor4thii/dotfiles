@@ -77,3 +77,8 @@ eval "$(starship init zsh)"
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/frederic.sinn/.lmstudio/bin"
+# End of LM Studio CLI section
+
