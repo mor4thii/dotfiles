@@ -82,6 +82,7 @@ Make site to deselect
 - COS shell configurations
 - alacritty
 - micro
+- intel-ucode
 
 Then, follow steps for [post install](https://wiki.cachyos.org/configuration/post_install_setup/) including apparmor and zsh switch.
 Also follow steps regarding Steam in the [Gaming](https://wiki.cachyos.org/configuration/gaming/) section. Don't forget to set games to using performance mode
