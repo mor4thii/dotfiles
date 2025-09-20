@@ -74,15 +74,7 @@ Follow instruction on the [CachyOS wiki](https://wiki.cachyos.org/) for installi
 - btrfs,
 - Plasma Desktop
 
-Make site to deselect 
-
-- CachyOS Packages
-  - cachyos-micro-settings
-  - cachyos-wallpapers
-- COS shell configurations
-- alacritty
-- micro
-- intel-ucode
+Only deselect 'COS shell configurations' for maximum stability of the installer.
 
 Then, follow steps for [post install](https://wiki.cachyos.org/configuration/post_install_setup/) including apparmor and zsh switch.
 Also follow steps regarding Steam in the [Gaming](https://wiki.cachyos.org/configuration/gaming/) section. Don't forget to set games to using performance mode
