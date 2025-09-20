@@ -88,6 +88,15 @@ Use `active` pstate and powersafe governor, also as preference, c.f. [General Sy
 ### (For now) Manual steps
 
 Set up git SSH key, clone this repo and install the additional tools listed above.
+
+Remember to check ssh key file and directory permissions. To fix them, use something similar to this:
+
+```shell
+chmod 700 ~/.ssh/
+chmod 644 ~/.ssh/id_ed25519.pub
+chmod 600 ~/.ssh/id_ed25519
+```
+
 Then:
 
 ```shell
