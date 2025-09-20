@@ -124,7 +124,7 @@ rustup default stable
 ```
 
 ```shell
-yay -S wl-clipboard juliaup
+yay -S wl-clipboard juliaup discord-canary
 ```
 
 
