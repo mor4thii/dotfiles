@@ -130,11 +130,11 @@ yay -S wl-clipboard juliaup discord-canary
 Reboot and continue in ghostty from now
 
 ```shell
-pnpm env use --global lts &&
+pnpm env use --global lts
 ```
 
 ```shell
-sdk install java 21.0.7-tem
+sdk install java 25-zulu
 ```
 
 ```shell
