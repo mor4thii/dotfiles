@@ -54,18 +54,6 @@ These other tools need manual steps:
 - [sdkman](https://sdkman.io/)
 - [pnpm](https://pnpm.io/installation#on-posix-systems)
 
-## For wallpapers
-
-There is a web resource I tend to use to search for wallpapers.
-
-- <https://simpledesktops.com/browse/>
-
-Or use one of the ones in the Wallpapers folder, kindly provided by <https://github.com/Noctax/Noctax-Wallpapers> and <https://github.com/orangci/walls-catppuccin-mocha>
-
-## Fonts
-
-I use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
-
 ## CachyOS
 
 Follow instruction on the [CachyOS wiki](https://wiki.cachyos.org/) for installing using the GUI installer iso, choosing
@@ -165,22 +153,38 @@ cpanm -n Neovim::Ext --sudo
 gem install neovim
 ```
 
-```shell
-sudo cp assets/background-tile.png /usr/share/plymouth/themes/spinner/ && sudo mkinitcpio -P
-```
-
-- In KDE System Settings, enable HDR.
-- Use `BGRT` as Boot Splash Screen Theme
-- Breeze Chameleon Dark is a good icon theme
-- Also check Audio setup
-- Apply <https://github.com/catppuccin/firefox> (Moccha Mauve)
-- Apply <https://github.com/catppuccin/kde> (Moccha Mauve)
+In KDE System Settings
+- Quick Settings -> Animation Speed: instant
+- Keyboard -> Key Bindings -> Compose key to right CTRL
+- Check Audio setup
+- Display & Monitor (For LG C2)
+  - 120Hz
+  - Adaptive Sync always
+  - RGB Full
+  - Enable HDR & after Apply, calibrate
+  - Prefer Color accuracy
+  - Automatic color resolution limit
+  - sRGB 40%
+- Colors & Themes -> Apply Breeze Dark again
+- Colors & Themes -> Splash Screen: Reapply Breeze
+- Colors & Themes -> SDDM: Apply Plasma Settings
+- Colors & Themes -> Boot Splash Screen: Apply BGRT
 - Apply the kzones layout in KDE kwin settings
-- Apply <https://github.com/catppuccin/limine> (Mocha Mauve)
-  - Also set timeout to 2s and add `interface_branding:`
 - In nvim, run `:TSInstall css latex norg scss svelte typst vue`
 
 > In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
+
+### For wallpapers
+
+There is a web resource I tend to use to search for wallpapers.
+
+- <https://simpledesktops.com/browse/>
+
+Or use one of the ones in the Wallpapers folder, kindly provided by <https://github.com/Noctax/Noctax-Wallpapers> and <https://github.com/orangci/walls-catppuccin-mocha>
+
+### Fonts
+
+I use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
 
 ### DaVinci
 
