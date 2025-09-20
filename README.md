@@ -127,6 +127,7 @@ rustup default stable
 yay -S wl-clipboard juliaup discord-canary
 ```
 
+Reboot and continue in ghostty from now
 
 ```shell
 pnpm env use --global lts &&
