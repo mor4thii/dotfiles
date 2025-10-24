@@ -157,6 +157,10 @@ cpanm -n Neovim::Ext --sudo
 gem install neovim
 ```
 
+```shell
+cargo install --locked typst-cli typstyle
+```
+
 In KDE System Settings
 
 - Quick Settings -> Animation Speed: instant
