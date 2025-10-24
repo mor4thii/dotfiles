@@ -1,3 +1,6 @@
+if true then
+  return {}
+end
 return {
   "mfussenegger/nvim-jdtls",
   opts = {
@@ -7,16 +10,8 @@ return {
           configuration = {
             runtimes = {
               {
-                name = "JavaSE-11",
-                path = "$SDKMAN_CANDIDATES_DIR/java/11.0.25-tem/",
-              },
-              {
-                name = "JavaSE-17",
-                path = "$SDKMAN_CANDIDATES_DIR/java/17.0.14-tem/",
-              },
-              {
-                name = "JavaSE-21",
-                path = "$SDKMAN_CANDIDATES_DIR/java/21.0.7-tem/",
+                name = "JavaSE-25",
+                path = "$SDKMAN_CANDIDATES_DIR/java/25-zulu/",
                 default = true,
               },
             },

@@ -134,6 +134,10 @@ juliaup add release && juliaup default release
 ```
 
 ```shell
+pnpm install -g neovim markdown-toc markdownlint-cli2 prettier
+```
+
+```shell
 pnpm add -g tree-sitter-cli && pnpm approve-builds -g
 ```
 
@@ -154,6 +158,7 @@ gem install neovim
 ```
 
 In KDE System Settings
+
 - Quick Settings -> Animation Speed: instant
 - Keyboard -> Key Bindings -> Compose key to right CTRL
 - Check Audio setup
