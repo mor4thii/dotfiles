@@ -97,3 +97,11 @@ PERL_MM_OPT="INSTALL_BASE=/home/fred/perl5"; export PERL_MM_OPT;
 # Ruby
 export GEM_HOME="$(gem env user_gemhome)"
 export PATH="$PATH:$GEM_HOME/bin"
+
+# Rust
+export RUST_HOME="$HOME/.cargo/bin:$PATH"
+case ":$PATH:" in
+  *":$RUST_HOME:"*) ;;
+  *) export PATH="$RUST_HOME:$PATH" ;;
+esac
+
