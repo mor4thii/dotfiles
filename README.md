@@ -88,7 +88,7 @@ chmod 600 ~/.ssh/id_ed25519
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck luarocks lazygit ast-grep go python-pip rustup php composer ruby mermaid-cli cpanminus python-pynvim
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit ast-grep mermaid-cli cpanminus
 ```
 
 ```shell
@@ -108,11 +108,7 @@ sudo pacman -S obs-studio-browser obs-vkcapture lib32-obs-vkcapture alsa-scarlet
 ```
 
 ```shell
-rustup default stable
-```
-
-```shell
-yay -S wl-clipboard juliaup discord-canary
+yay -S wl-clipboard discord-canary
 ```
 
 Reboot and continue in ghostty from now
@@ -130,11 +126,7 @@ sdk install maven 3.9.11
 ```
 
 ```shell
-juliaup add release && juliaup default release
-```
-
-```shell
-pnpm install -g neovim markdown-toc markdownlint-cli2 prettier
+pnpm install -g neovim prettier
 ```
 
 ```shell
@@ -151,14 +143,6 @@ cpan Bundle::CPAN
 
 ```shell
 cpanm -n Neovim::Ext --sudo
-```
-
-```shell
-gem install neovim
-```
-
-```shell
-cargo install --locked typst-cli typstyle
 ```
 
 In KDE System Settings
@@ -179,7 +163,6 @@ In KDE System Settings
 - Colors & Themes -> SDDM: Apply Plasma Settings
 - Colors & Themes -> Boot Splash Screen: Apply BGRT
 - Apply the kzones layout in KDE kwin settings
-- In nvim, run `:TSInstall css latex norg scss svelte typst vue`
 
 > In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
 
