@@ -2,7 +2,7 @@
 
 My dotfiles shared between machines. This will generally produce a Catppuccin-themed workspace with the tools I use every day.
 
-The terminal emulator I use is Ghostty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
+The terminal emulator I use is alacritty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
 Thus I use starship.rs as prompt and zap for plugin management. I currently migrate to neovim as my editor of choice.
 
 ## TODO
@@ -13,7 +13,7 @@ Thus I use starship.rs as prompt and zap for plugin management. I currently migr
 
 Shared configs that are the same on every machine are just the following.
 
-- ghostty
+- alacritty
 - nvim
 - starship
 
@@ -88,7 +88,7 @@ chmod 600 ~/.ssh/id_ed25519
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit ast-grep mermaid-cli cpanminus
+sudo pacman -S alacritty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit ast-grep mermaid-cli cpanminus
 ```
 
 ```shell
@@ -100,7 +100,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow ghostty git nvim profile ssh-priv starship zsh electron
+stow -t $HOME --stow alacritty git nvim profile ssh-priv starship zsh electron
 ```
 
 ```shell
@@ -111,7 +111,7 @@ sudo pacman -S obs-studio-browser obs-vkcapture lib32-obs-vkcapture alsa-scarlet
 yay -S wl-clipboard discord-canary
 ```
 
-Reboot and continue in ghostty from now
+Reboot and continue in alacritty from now
 
 ```shell
 pnpm env use --global lts
