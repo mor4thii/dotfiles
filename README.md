@@ -100,7 +100,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow alacritty git nvim profile ssh-priv starship zsh electron
+stow -t $HOME --stow alacritty git lazygit nvim profile ssh-priv starship zsh electron
 ```
 
 ```shell
