@@ -7,7 +7,7 @@ return {
           configuration = {
             runtimes = {
               {
-                name = "JavaSE-25",
+                name = "JavaSE-24",
                 path = "$SDKMAN_CANDIDATES_DIR/java/24.0.2-zulu/",
                 default = true,
               },
