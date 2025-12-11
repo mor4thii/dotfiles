@@ -137,3 +137,12 @@ key = "Key0"
 mods = "Control"
 action = "ResetFontSize"
 
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+chars = "\u001BF"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u001BB"
