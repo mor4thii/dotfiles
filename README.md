@@ -2,7 +2,7 @@
 
 My dotfiles shared between machines. This will generally produce a Catppuccin-themed workspace with the tools I use every day.
 
-The terminal emulator I use is alacritty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
+The terminal emulator I use is ghostty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
 Thus I use starship.rs as prompt and zap for plugin management. I currently migrate to neovim as my editor of choice.
 
 ## TODO
@@ -13,7 +13,7 @@ Thus I use starship.rs as prompt and zap for plugin management. I currently migr
 
 Shared configs that are the same on every machine are just the following.
 
-- alacritty
+- ghostty
 - nvim
 - starship
 
@@ -73,7 +73,7 @@ LD_PRELOAD="" game-performance %command%
 
 Use `active` pstate and powersafe governor, also as preference, c.f. [General System Tweaks](https://wiki.cachyos.org/configuration/general_system_tweaks/)
 
-### (For now) Manual steps
+### Common steps
 
 Set up git SSH key, clone this repo and install the additional tools listed above.
 
@@ -85,10 +85,12 @@ chmod 644 ~/.ssh/id_ed25519.pub
 chmod 600 ~/.ssh/id_ed25519
 ```
 
+### (For now) Manual steps
+
 Then:
 
 ```shell
-sudo pacman -S alacritty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit ast-grep mermaid-cli cpanminus
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit ast-grep mermaid-cli cpanminus
 ```
 
 ```shell
@@ -100,7 +102,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow alacritty git lazygit nvim profile ssh-priv starship zsh electron backup systemd
+stow -t $HOME --stow ghostty git lazygit nvim profile ssh-priv starship zsh electron backup systemd
 ```
 
 ```shell
@@ -111,7 +113,7 @@ sudo pacman -S obs-studio-browser obs-vkcapture lib32-obs-vkcapture alsa-scarlet
 yay -S wl-clipboard discord-canary
 ```
 
-Reboot and continue in alacritty from now
+Reboot and continue in ghostty from now
 
 ```shell
 pnpm env use --global lts
@@ -166,6 +168,26 @@ In KDE System Settings
 
 > In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
 
+### For work (MacOS)
+
+Install `brew`, then run the following
+
+```shell
+brew install fzf ripgrep thefuck tealdeer fd neovim tree stow lazygit starship
+```
+
+```shell
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1 -k
+```
+
+```shell
+stow -t $HOME --stow ghostty git lazygit nvim profile-work ssh-work starship zsh-work
+```
+
+```shell
+stow -t $HOME/Repositories/c49 --stow git-work
+```
+
 ### For wallpapers
 
 There is a web resource I tend to use to search for wallpapers.
@@ -190,7 +212,7 @@ lsblk -f
 to find the hard drive target to add it under `/etc/fstab`, for example as exfat drive:
 
 ```shell
-UUID=xxxxxxxxx                            /media/backup  exfat   defaults,nofail,uid=1000,gid=1000,rw,user,exec,umask=000
+UUID=xxxx-xxxx                            /media/backup  exfat  noauto,x-systemd.automount,x-systemd.device-timeout=5,nofail,uid=1000,gid=1000,umask=000  0  0
 ```
 
 Make sure to create the target folder.

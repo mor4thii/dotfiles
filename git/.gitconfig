@@ -37,6 +37,6 @@
 	enabled = true
 	autoupdate = true
 
-[includeIf "gitdir:~/Documents/code/work/"]
-	path = ~/Documents/code/work/.gitconfig
+[includeIf "gitdir:~/Repositories/c49/"]
+	path = ~/Repositories/c49/.gitconfig
 
