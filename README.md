@@ -100,7 +100,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow alacritty git lazygit nvim profile ssh-priv starship zsh electron
+stow -t $HOME --stow alacritty git lazygit nvim profile ssh-priv starship zsh electron backup
 ```
 
 ```shell
@@ -177,6 +177,28 @@ Or use one of the ones in the Wallpapers folder, kindly provided by <https://git
 ### Fonts
 
 I use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
+
+### Backup
+A simple backup logic backs up my home directory to an external drive.
+It involes
+
+```shell
+lsblk -f
+```
+
+to find the hard drive target to add it under `/etc/fstab`, for example as exfat drive:
+
+```shell
+UUID=xxxxxxxxx                            /media/backup  exfat   defaults,nofail,uid=1000,gid=1000,rw,user,exec,umask=000
+```
+
+Make sure to create the target folder.
+
+```shell
+sudo mkdir -p /media/backup
+```
+
+Then run the backup script stowed to `~/backup.sh`, either manually or automatically using cronjobs or systemd.
 
 ### DaVinci
 
