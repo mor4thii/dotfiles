@@ -5,11 +5,13 @@ rsync -avh --delete --progress \
   --exclude='tmp' \
   --exclude='.cache' \
   --exclude='.local/share/Steam' \
-  --exclude='.npm' \
-  --exclude='.m2' \
+  --exclude='.local/share/Trash' \
   --exclude='.cpan' \
   --exclude='.cpanm' \
-  --exclude='.wine' \
+  --exclude='.m2' \
+  --exclude='.npm' \
   --exclude='.sdkman' \
+  --exclude='.thumbnails' \
+  --exclude='.wine' \
   /home/fred/ /media/backup/fred-backup/
 echo "Backup complete!"
