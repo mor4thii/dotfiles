@@ -18,3 +18,9 @@ rsync -avh --delete --progress \
   --exclude='.wine' \
   /home/fred/ /media/backup/fred-backup/
 echo "Backup complete!"
+
+if [ $? -eq 0 ]; then
+  notify-send "Backup Complete" "Home directory backed up successfully"
+else
+  notify-send -u critical "Backup Failed" "Check logs: journalctl --user -u backup.service"
+fi
