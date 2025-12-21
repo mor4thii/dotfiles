@@ -1,5 +1,6 @@
 #!/bin/bash
 rsync -avh --delete --progress \
+  --exclude='Games/battlenet' \
   --exclude='miniforge3' \
   --exclude='tmp' \
   --exclude='.cache' \
