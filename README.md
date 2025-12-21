@@ -197,6 +197,7 @@ Make sure to create the target folder.
 
 ```shell
 sudo mkdir -p /media/backup
+sudo chown -R user:user /media/backup
 ```
 
 Then run the backup script stowed to `~/backup.sh`, either manually or automatically using cronjobs or systemd.
@@ -218,6 +219,12 @@ systemctl --user start backup.timer
 # Check status
 systemctl --user status backup.timer
 systemctl --user list-timers
+systemctl --user status backup.service
+journalctl --user -u backup.service -f
+
+# Stop or kill
+systemctl --user stop backup.service
+systemctl --user kill backup.service
 ```
 
 ### DaVinci
