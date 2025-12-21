@@ -1,6 +1,5 @@
 #!/bin/bash
 rsync -avh --delete --progress \
-  \
   --exclude='miniforge3' \
   --exclude='tmp' \
   --exclude='.cache' \
@@ -11,5 +10,5 @@ rsync -avh --delete --progress \
   --exclude='.cpanm' \
   --exclude='.wine' \
   --exclude='.sdkman' \
-  /home/fred/ /media/backup/fred-backup/ # --exclude='Games' \
+  /home/fred/ /media/backup/fred-backup/
 echo "Backup complete!"
