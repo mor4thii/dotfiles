@@ -1,0 +1,12 @@
+[Unit]
+Description=Backup home directory to external drive
+After=media-backup.mount
+
+[Service]
+Type=oneshot
+ExecStart=/home/fred/backup.sh
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

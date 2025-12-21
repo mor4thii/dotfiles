@@ -100,7 +100,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow alacritty git lazygit nvim profile ssh-priv starship zsh electron backup
+stow -t $HOME --stow alacritty git lazygit nvim profile ssh-priv starship zsh electron backup systemd
 ```
 
 ```shell
@@ -179,6 +179,7 @@ Or use one of the ones in the Wallpapers folder, kindly provided by <https://git
 I use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
 
 ### Backup
+
 A simple backup logic backs up my home directory to an external drive.
 It involes
 
@@ -199,6 +200,25 @@ sudo mkdir -p /media/backup
 ```
 
 Then run the backup script stowed to `~/backup.sh`, either manually or automatically using cronjobs or systemd.
+
+#### systemd backup
+
+The backup can be run once a day, persistently, meaning missed backups will be executed next time.
+
+```shell
+# Reload systemd to see new files
+systemctl --user daemon-reload
+
+# Enable timer to start on boot
+systemctl --user enable backup.timer
+
+# Start the timer now
+systemctl --user start backup.timer
+
+# Check status
+systemctl --user status backup.timer
+systemctl --user list-timers
+```
 
 ### DaVinci
 
