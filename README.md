@@ -305,18 +305,3 @@ sudo pacman -Sy
 ## Update Keychron firmware on Linux
 
 See [QMK FAQ](https://docs.qmk.fm/faq_build#linux-udev-rules) for rules file to make the [launcher](https://launcher.keychron.com/) connect to the keyboard correctly.
-
-## Work Mac
-
-This section is way less elaborate as I focus on my private setup for now. I will revisit this once I need to reinstall my work machine.
-However, here are some steps I needed to do to bring my work machine up to simpledesktops
-
-```shell
-brew install fish ast-grep lazygit wget tree-sitter ghostscript imagemagick tree-sitter-cli
-```
-
-```shell
-pnpm add -g prettier markdown-toc markdownlint-cli2 @mermaid-js/mermaid-cli
-```
-
-I use `sdkman` and `pnpm` on my work machine. I needed to install `TeXlive` as well.
