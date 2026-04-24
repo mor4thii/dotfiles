@@ -97,7 +97,7 @@ chmod 600 ~/.ssh/id_ed25519
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist
 ```
 
 ```shell
@@ -133,6 +133,12 @@ sdk install maven 3.9.11
 ```shell
 pnpm install -g neovim prettier
 ```
+
+### If using Niri/Noctalia
+
+CachyOS has some opinionated Niri settings.
+To setup ghostty to launch at SUPER-Return, change ~/.config/niri/cfg/keybinds.kdl accordingly.
+For good measure, also change it in Noctalia settings through the bar.
 
 ### If using KDE
 
