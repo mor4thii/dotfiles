@@ -56,11 +56,15 @@ These other tools need manual steps:
 
 ## CachyOS
 
+_BIOS_: Turn off Secure Boot, CSM, and set Legacy USB Support to Auto!
+
 Follow instruction on the [CachyOS wiki](https://wiki.cachyos.org/) for installing using the GUI installer iso, choosing
 
-- Limine,
-- btrfs,
-- Plasma Desktop
+- systemd-boot,
+- XFS,
+- Niri Desktop
+
+Prefer manual partitioning, see [COS Desktop Install](https://wiki.cachyos.org/installation/installation_on_root/).
 
 Only deselect 'COS shell configurations' for maximum stability of the installer.
 
@@ -129,22 +133,6 @@ sdk install maven 3.9.11
 
 ```shell
 pnpm install -g neovim prettier
-```
-
-```shell
-pnpm add -g tree-sitter-cli && pnpm approve-builds -g
-```
-
-```shell
-cpan App::ucpan
-```
-
-```shell
-cpan Bundle::CPAN
-```
-
-```shell
-cpanm -n Neovim::Ext --sudo
 ```
 
 In KDE System Settings
