@@ -48,11 +48,14 @@ From this list, we can install `fd`, `fzf`, `rg`, `thefuck`, and `tldr` using `p
 
 These other tools need manual steps:
 
-- [miniforge](https://github.com/conda-forge/miniforge)
-- [TeXlive](https://www.tug.org/texlive/quickinstall.html)
 - [yay](https://github.com/Jguer/yay)
 - [sdkman](https://sdkman.io/)
 - [pnpm](https://pnpm.io/installation#on-posix-systems)
+
+Those are optional and things I occasionally need
+
+- [miniforge](https://github.com/conda-forge/miniforge)
+- [TeXlive](https://www.tug.org/texlive/quickinstall.html)
 
 ## CachyOS
 
@@ -94,7 +97,7 @@ chmod 600 ~/.ssh/id_ed25519
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit ast-grep mermaid-cli cpanminus
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui
 ```
 
 ```shell
@@ -106,11 +109,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow ghostty git lazygit nvim profile ssh-priv starship zsh electron backup systemd
-```
-
-```shell
-sudo pacman -S obs-studio-browser obs-vkcapture lib32-obs-vkcapture alsa-scarlett-gui
+stow -t $HOME --stow ghostty git lazygit nvim profile ssh-priv starship zsh electron
 ```
 
 ```shell
@@ -134,6 +133,8 @@ sdk install maven 3.9.11
 ```shell
 pnpm install -g neovim prettier
 ```
+
+### If using KDE
 
 In KDE System Settings
 
@@ -210,6 +211,12 @@ sudo mkdir -p /media/backup
 sudo chown -R user:user /media/backup
 ```
 
+Stow the needed files
+
+```shell
+stow -t $HOME --stow backup systemd
+```
+
 Then run the backup script stowed to `~/backup.sh`, either manually or automatically using cronjobs or systemd.
 
 #### systemd backup
@@ -236,10 +243,6 @@ journalctl --user -u backup.service -f
 systemctl --user stop backup.service
 systemctl --user kill backup.service
 ```
-
-### DaVinci
-
-See the [Arch page](https://wiki.archlinux.org/title/DaVinci_Resolve) for install instructions.
 
 ### Bluetooth
 
