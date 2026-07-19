@@ -48,7 +48,7 @@ From this list, we can install `fd`, `fzf`, `rg`, `thefuck`, and `tldr` using `p
 
 These other tools need manual steps:
 
-- [yay](https://github.com/Jguer/yay)
+- [paru](https://github.com/Morganamilo/paru)
 - [sdkman](https://sdkman.io/)
 - [pnpm](https://pnpm.io/installation#on-posix-systems)
 
@@ -97,7 +97,7 @@ chmod 600 ~/.ssh/id_ed25519
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist inter-font ttf-jetbrains-mono-nerd
 ```
 
 ```shell
@@ -113,7 +113,7 @@ stow -t $HOME --stow ghostty git lazygit nvim profile ssh-priv starship zsh elec
 ```
 
 ```shell
-yay -S wl-clipboard discord-canary
+paru -S wl-clipboard discord-canary
 ```
 
 Reboot and continue in ghostty from now
