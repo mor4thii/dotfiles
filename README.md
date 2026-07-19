@@ -111,7 +111,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow ghostty git lazygit nvim profile ssh-priv starship zsh electron
+stow -t $HOME --stow ghostty git lazygit nvim profile ssh-priv starship zsh electron niri
 ```
 
 ```shell
