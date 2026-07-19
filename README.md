@@ -80,6 +80,8 @@ LD_PRELOAD="" game-performance %command%
 
 Use `active` pstate and powersafe governor, also as preference, c.f. [General System Tweaks](https://wiki.cachyos.org/configuration/general_system_tweaks/)
 
+## Installation
+
 ### Common steps
 
 Set up git SSH key, clone this repo and install the additional tools listed above.
