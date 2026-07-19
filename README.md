@@ -121,7 +121,7 @@ paru -S wl-clipboard discord-canary
 Reboot and continue in ghostty from now
 
 ```shell
-pnpm env use --global lts
+pnpm runtime set node lts -g
 ```
 
 ```shell
@@ -129,7 +129,7 @@ sdk install java 25-zulu
 ```
 
 ```shell
-sdk install maven 3.9.11
+sdk install maven 3.9.16
 ```
 
 ```shell
