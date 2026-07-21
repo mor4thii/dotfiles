@@ -1,9 +1,6 @@
-theme = dark:Catppuccin Mocha,light: Catppuccin Latte
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 
-font-family = "JetBrainsMono NFM Regular"
-font-family-bold = "JetBrainsMono NFM Bold"
-font-family-italic = "JetBrainsMono NFM Italic"
-font-family-bold-italic = "JetBrainsMono NFM Bold Italic"
+font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 16
 
 mouse-hide-while-typing = true
