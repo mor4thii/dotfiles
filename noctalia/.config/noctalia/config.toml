@@ -1,5 +1,12 @@
+config_version = 2
+
 [audio]
 enable_sounds = true
+
+[bar.default]
+auto_hide = true
+reserve_space = false
+thickness = 24
 
 [desktop_widgets]
 enabled = false
@@ -64,7 +71,7 @@ source = "builtin"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "gtk3", "gtk4", "ghostty", "niri", "starship" ]
+    builtin_ids = [ "gtk3", "gtk4" ]
     community_ids = [ "neovim", "discord" ]
 
 [wallpaper]
