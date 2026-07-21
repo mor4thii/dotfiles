@@ -6,7 +6,7 @@ enable_sounds = true
 [bar.default]
 auto_hide = true
 reserve_space = false
-thickness = 24
+thickness = 32
 
 [desktop_widgets]
 enabled = false
