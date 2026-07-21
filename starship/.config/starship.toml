@@ -1,7 +1,14 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = '$character$directory$git_branch$git_status'
+format = """
+$directory\
+$git_branch\
+$git_status\
+$line_break\
+$character\
+"""
+
 add_newline = true
 
 [character]
