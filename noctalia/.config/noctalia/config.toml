@@ -67,12 +67,11 @@ telemetry_enabled = true
 builtin = "Catppuccin"
 community_palette = "Occult Umbral"
 mode = "dark"
-source = "builtin"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
     builtin_ids = [ "gtk3", "gtk4" ]
-    community_ids = [ "neovim", "discord" ]
+    community_ids = [ "discord" ]
 
 [wallpaper]
 directory = "/home/fred/Repositories/dotfiles/Wallpapers"

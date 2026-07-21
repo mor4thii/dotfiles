@@ -1,4 +1,4 @@
-theme = noctalia
+theme = dark:Catppuccin Mocha,light: Catppuccin Latte
 
 font-family = "JetBrainsMono NFM Regular"
 font-family-bold = "JetBrainsMono NFM Bold"
@@ -10,8 +10,6 @@ mouse-hide-while-typing = true
 
 window-vsync = false
 window-inherit-working-directory = true
-window-width = 101
-window-height = 24
 
 background-opacity = 0.7
 
