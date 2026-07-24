@@ -99,7 +99,7 @@ chmod 600 ~/.ssh/id_ed25519
 Then:
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist inter-font ttf-jetbrains-mono-nerd
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist inter-font ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
 ```
 
 ```shell
