@@ -9,32 +9,6 @@ Thus I use starship.rs as prompt and zap for plugin management. I currently migr
 
 - Better job at de-duplicating work and private `.zshrc` file
 
-## Supported tools
-
-Shared configs that are the same on every machine are just the following.
-
-- ghostty
-- nvim
-- starship
-
-On my private machines, I have configuration for these tools.
-
-- electron
-- git
-- kzones
-- plasma
-- profile
-- ssh-priv
-
-On my work machine, I use these tools in addition to the shared list above.
-
-- git-work
-- ideavim
-- profile-work
-- ssh-work
-- task
-- timew
-
 ## Tools I like
 
 There are some more tools that I like to use on a daily basis, but that have no dedicated configuration to share between machines.
@@ -94,9 +68,9 @@ chmod 644 ~/.ssh/id_ed25519.pub
 chmod 600 ~/.ssh/id_ed25519
 ```
 
-### (For now) Manual steps
+### For private use
 
-Then:
+Install and configure tools as stated below.
 
 ```shell
 sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist inter-font ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
@@ -136,35 +110,6 @@ sdk install maven 3.9.16
 pnpm install -g neovim prettier
 ```
 
-### If using Niri/Noctalia
-
-CachyOS has some opinionated Niri settings.
-To setup ghostty to launch at SUPER-Return, change ~/.config/niri/cfg/keybinds.kdl accordingly.
-For good measure, also change it in Noctalia settings through the bar.
-
-### If using KDE
-
-In KDE System Settings
-
-- Quick Settings -> Animation Speed: instant
-- Keyboard -> Key Bindings -> Compose key to right CTRL
-- Check Audio setup
-- Display & Monitor (For LG C2)
-  - 120Hz
-  - Adaptive Sync always
-  - RGB Full
-  - Enable HDR & after Apply, calibrate
-  - Prefer Color accuracy
-  - Automatic color resolution limit
-  - sRGB 40%
-- Colors & Themes -> Apply Breeze Dark again
-- Colors & Themes -> Splash Screen: Reapply Breeze
-- Colors & Themes -> SDDM: Apply Plasma Settings
-- Colors & Themes -> Boot Splash Screen: Apply BGRT
-- Apply the kzones layout in KDE kwin settings
-
-> In KDE, X11 sessions can be switched on and off in System Settings. Search for sddm
-
 ### For work (MacOS)
 
 Install `brew`, then run the following
@@ -195,7 +140,7 @@ Or use one of the ones in the Wallpapers folder, kindly provided by <https://git
 
 ### Fonts
 
-I use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
+I tend to use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
 
 ### Backup
 
@@ -252,49 +197,9 @@ systemctl --user stop backup.service
 systemctl --user kill backup.service
 ```
 
-### Bluetooth
-
-CachyOS, as of time of writing, provides bluetoothctl for bluetooth device management.
-To connect to the XBox Controller, the following steps can help
-
-```shell
-# Puts me into [bluetooth]# prompt
-bluetoothctl
-```
-
-```shell
-# Make sure the right bt controller is used
-show
-```
-
-```shell
-power on
-discoverable on
-pairable on
-```
-
-```shell
-# Will start printing out discovered devices, find right MAC of target device
-scan on
-```
-
-```shell
-pair <dev>
-```
-
-```shell
-# This should also turn off discoverable, double-check with `show`
-scan off
-```
-
-```shell
-connect <dev>
-trust <dev>
-```
-
 ## Troubleshooting
 
-If there are issues regarding PGP keys when running `pacman`, the following commands update the pacman keys.
+If there are issues regarding PGP keys when running `pacman`, the following commands update pacman keys.
 
 ```
 sudo pacman-key --refresh-keys
