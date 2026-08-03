@@ -1,0 +1,10 @@
+[appearance]
+password_style = "random"
+
+[keyboard]
+layout = "us"
+options = "grp:alt_shift_toggle"
+
+[output]
+width = 1920
+height = 1080

@@ -88,6 +88,8 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia nvim profile ssh-priv starship zsh 
 ```
 
+Transfer settings needed from noctalia-greeter toml to `/var/lib/noctalia-greeter/greeter.toml`
+
 ```shell
 paru -S wl-clipboard discord-canary
 ```
