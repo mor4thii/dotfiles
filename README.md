@@ -73,7 +73,7 @@ chmod 600 ~/.ssh/id_ed25519
 Install and configure tools as stated below.
 
 ```shell
-sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist inter-font ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
+sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist ttf-dejavu ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
 ```
 
 ```shell
@@ -85,7 +85,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow electron ghostty git lazygit niri noctalia nvim profile ssh-priv starship zsh 
+stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia nvim profile ssh-priv starship zsh 
 ```
 
 ```shell
@@ -137,10 +137,6 @@ There is a web resource I tend to use to search for wallpapers.
 - <https://simpledesktops.com/browse/>
 
 Or use one of the ones in the Wallpapers folder, kindly provided by <https://github.com/Noctax/Noctax-Wallpapers> and <https://github.com/orangci/walls-catppuccin-mocha>
-
-### Fonts
-
-I tend to use [Inter](https://rsms.me/inter/download/) for UI and [JetBrains Mono (Nerd Font)](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.zip) for monospaced fonts.
 
 ### Backup
 

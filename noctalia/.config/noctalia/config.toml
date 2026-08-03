@@ -52,7 +52,7 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_login_button = true
 
 [shell]
-font_family = "Inter"
+font_family = "DejaVu Sans"
 polkit_agent = true
 screen_time_enabled = true
 telemetry_enabled = true
