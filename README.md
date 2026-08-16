@@ -46,7 +46,7 @@ chmod 600 ~/.ssh/id_ed25519
 
 ### For private use
 
-Install and configure tools as stated below.
+Make sure [paru](https://github.com/Morganamilo/paru) is installed
 
 ```shell
 sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist ttf-dejavu ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
@@ -54,7 +54,6 @@ sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit 
 
 Install these required tools
 
-- [paru](https://github.com/Morganamilo/paru)
 - [sdkman](https://sdkman.io/)
 - [pnpm](https://pnpm.io/installation#on-posix-systems)
 
