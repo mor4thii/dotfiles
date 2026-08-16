@@ -9,28 +9,6 @@ Thus I use starship.rs as prompt and zap for plugin management. I currently migr
 
 - Better job at de-duplicating work and private `.zshrc` file
 
-## Tools I like
-
-There are some more tools that I like to use on a daily basis, but that have no dedicated configuration to share between machines.
-From this list, we can install `fd`, `fzf`, `rg`, `thefuck`, and `tldr` using `pacman`.
-
-- [fd](https://github.com/sharkdp/fd)
-- [fzf](https://github.com/junegunn/fzf)
-- [rg](https://github.com/BurntSushi/ripgrep)
-- [thefuck](https://github.com/nvbn/thefuck)
-- [tldr](https://github.com/tealdeer-rs/tealdeer)
-
-These other tools need manual steps:
-
-- [paru](https://github.com/Morganamilo/paru)
-- [sdkman](https://sdkman.io/)
-- [pnpm](https://pnpm.io/installation#on-posix-systems)
-
-Those are optional and things I occasionally need
-
-- [miniforge](https://github.com/conda-forge/miniforge)
-- [TeXlive](https://www.tug.org/texlive/quickinstall.html)
-
 ## CachyOS
 
 _BIOS_: Turn off Secure Boot, CSM, and set Legacy USB Support to Auto!
@@ -58,9 +36,7 @@ Use `active` pstate and powersafe governor, also as preference, c.f. [General Sy
 
 ### Common steps
 
-Set up git SSH key, clone this repo and install the additional tools listed above.
-
-Remember to check ssh key file and directory permissions. To fix them, use something similar to this:
+Set up git SSH key and clone this repo. Remember to check ssh key file and directory permissions. To fix them, use something similar to this:
 
 ```shell
 chmod 700 ~/.ssh/
@@ -75,6 +51,17 @@ Install and configure tools as stated below.
 ```shell
 sudo pacman -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist ttf-dejavu ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
 ```
+
+Install these required tools
+
+- [paru](https://github.com/Morganamilo/paru)
+- [sdkman](https://sdkman.io/)
+- [pnpm](https://pnpm.io/installation#on-posix-systems)
+
+Those are optional and things I occasionally need
+
+- [miniforge](https://github.com/conda-forge/miniforge)
+- [TeXlive](https://www.tug.org/texlive/quickinstall.html)
 
 ```shell
 curl -sS https://starship.rs/install.sh | sh
@@ -119,6 +106,10 @@ Install `brew`, then run the following
 ```shell
 brew install fzf ripgrep thefuck tealdeer fd neovim tree stow lazygit starship
 ```
+
+Install these required tools
+
+- [sdkman](https://sdkman.io/)
 
 ```shell
 zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --branch release-v1 -k
