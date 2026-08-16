@@ -102,6 +102,14 @@ sdk install maven 3.9.16
 pnpm install -g neovim prettier
 ```
 
+```shell
+arch-update --tray --enable
+arch-update --check --enable
+```
+
+Note that `arch-update` might misbehave if `vim` is not available, but the default EDITOR for `sudo`.
+On my machine, a better way is to use `pacdiff -s` directly.
+
 ### For work (MacOS)
 
 Install `brew`, then run the following
