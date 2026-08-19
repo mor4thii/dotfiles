@@ -1,8 +1,9 @@
 # User configuration
 
-export EDITOR=nvim
-export VISUAL=nvim
-alias vim=nvim
+export SUDO_EDITOR=vim
+export EDITOR=vim
+export VISUAL=vim
+alias vi=vim
 
 export FZF_BASE=/usr/share/fzf
 

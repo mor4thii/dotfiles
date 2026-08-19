@@ -1,8 +1,9 @@
 # User configuration
 
-export EDITOR=nvim
-export VISUAL=nvim
-alias vim=nvim
+export EDITOR=vim
+export SUDO_EDITOR=vim
+export VISUAL=vim
+alias vi=vim
 
 export XDG_CONFIG_HOME="$HOME/.config"
 

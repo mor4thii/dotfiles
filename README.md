@@ -3,7 +3,7 @@
 My dotfiles shared between machines. This will generally produce a Catppuccin-themed workspace with the tools I use every day.
 
 The terminal emulator I use is ghostty, the shell is zsh. I opted out of oh-my-zsh in favor of having more control.
-Thus I use starship.rs as prompt and zap for plugin management. I currently migrate to neovim as my editor of choice.
+Thus I use starship.rs as prompt and zap for plugin management. I currently migrate to `vim` as my editor of choice.
 
 ## TODO
 
@@ -49,7 +49,7 @@ chmod 600 ~/.ssh/id_ed25519
 Make sure [paru](https://github.com/Morganamilo/paru) is installed
 
 ```shell
-paru -S ghostty neovim tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist ttf-dejavu ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
+paru -S ghostty tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist ttf-dejavu ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
 ```
 
 Install these required tools
@@ -71,7 +71,8 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia nvim profile ssh-priv starship zsh 
+stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia profile ssh-priv starship
+vim zsh
 ```
 
 Transfer settings needed from noctalia-greeter toml to `/var/lib/noctalia-greeter/greeter.toml`, then
@@ -99,7 +100,7 @@ sdk install maven 3.9.16
 ```
 
 ```shell
-pnpm install -g neovim prettier
+pnpm install -g prettier
 ```
 
 ```shell
@@ -115,7 +116,7 @@ On my machine, a better way is to use `pacdiff -s` directly.
 Install `brew`, then run the following
 
 ```shell
-brew install fzf ripgrep thefuck tealdeer fd neovim tree stow lazygit starship
+brew install fzf ripgrep thefuck tealdeer fd tree stow lazygit starship
 ```
 
 Install these required tools
@@ -127,7 +128,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow ghostty git lazygit nvim profile-work ssh-work starship zsh-work
+stow -t $HOME --stow ghostty git lazygit profile-work ssh-work starship vim zsh-work
 ```
 
 ```shell
