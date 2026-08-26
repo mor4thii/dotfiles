@@ -111,6 +111,15 @@ arch-update --check --enable
 Note that `arch-update` might misbehave if `vim` is not available, but the default EDITOR for `sudo`.
 On my machine, a better way is to use `pacdiff -s` directly.
 
+For laptops in my desk setup, typically I want to disable lid-close lock-and-suspend for DP-*
+outputs. Set the following in `/etc/logind.conf`:
+
+```shell
+HandleLidSwitch=ignore
+HandleLidSwitchExternalPower=ignore
+HandleLidSwitchDocked=ignore
+```
+
 ### For work (MacOS)
 
 Install `brew`, then run the following

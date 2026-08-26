@@ -106,6 +106,12 @@ output "eDP-1" {
     // position x=1280 y=0
 }
 
+output "DP-4" {
+    mode "3840x2160@60.000"
+    scale 1
+    transform "normal"
+}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Layout
@@ -275,7 +281,7 @@ spawn-at-startup "noctalia"
 
 hotkey-overlay {
     // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
-    // skip-at-startup
+    skip-at-startup
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -629,7 +635,7 @@ layer-rule {
 }
 
 switch-events {
-    lid-close { spawn "noctalia" "msg" "session" "lock-and-suspend"; }
+    lid-close { spawn "~/.local/bin/niri-lid-close.sh"; }
 }
 
 include "noctalia.kdl"
