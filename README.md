@@ -49,7 +49,7 @@ chmod 600 ~/.ssh/id_ed25519
 Make sure [paru](https://github.com/Morganamilo/paru) is installed
 
 ```shell
-paru -S ghostty tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist ttf-dejavu ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip
+paru -S ghostty tree stow fd fzf ripgrep tealdeer thefuck lazygit alsa-scarlett-gui cliphist ttf-dejavu ttf-jetbrains-mono-nerd tree-sitter-cli zip unzip ibus
 ```
 
 Install these required tools
@@ -71,7 +71,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia profile ssh-priv starship
+stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia profile ssh-priv starship autostart environment.d
 vim zsh
 ```
 

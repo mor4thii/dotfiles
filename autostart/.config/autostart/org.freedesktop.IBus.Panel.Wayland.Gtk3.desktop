@@ -1,0 +1,9 @@
+[Desktop Entry]
+# IBus Wayland is a branding name but not translatable.
+Name=IBus Wayland
+Exec=ibus start --type wayland
+Type=Application
+Icon=ibus
+NoDisplay=true
+X-Desktop-File-Install-Version=0.28
+OnlyShowIn=niri
