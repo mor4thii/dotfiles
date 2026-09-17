@@ -5,6 +5,5 @@ password_style = "random"
 layout = "us"
 options = "grp:alt_shift_toggle"
 
-[output]
-width = 1920
-height = 1080
+[idle]
+timeout = 60
