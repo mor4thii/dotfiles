@@ -26,8 +26,9 @@ output "eDP-1" {
     transform "normal"
 }
 
-output "DP-4" {
-    mode "3840x2160@60.000"
+output "LG Electronics LG TV SSCR2 0x01010101" {
+    // mode "3840x2160@60.000"
+    mode "2560x1440@119.998"
     scale 1
     transform "normal"
 }
