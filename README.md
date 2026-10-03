@@ -71,7 +71,7 @@ zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) 
 ```
 
 ```shell
-stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia profile ssh-priv starship autostart environment.d
+stow -t $HOME --stow electron fontconfig ghostty git lazygit niri noctalia profile ssh-priv starship autostart
 vim zsh
 ```
 
