@@ -240,9 +240,7 @@ binds {
 
     Mod+W { toggle-column-tabbed-display; }
 
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
+    Alt+Shift+4 { screenshot; }
 
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
@@ -255,6 +253,7 @@ binds {
     XF86AudioLowerVolume  { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute         { spawn-sh "noctalia msg volume-mute"; }
     XF86AudioMicMute      { spawn-sh "noctalia msg mic-mute"; }
+    Alt+Ctrl+Grave        { spawn-sh "noctalia msg mic-mute"; }
     XF86MonBrightnessUp   { spawn-sh "noctalia msg brightness-up"; }
     XF86MonBrightnessDown { spawn-sh "noctalia msg brightness-down"; }
 
